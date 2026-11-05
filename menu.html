@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Меню — SEVER Coffee Room</title>
+  <meta name="description" content="Меню SEVER Coffee Room: эспрессо-напитки, авторские чаи, матча, завтраки и выпечка. Описание, состав и объём каждой позиции. Цены в рублях.">
+  <meta name="theme-color" content="#171917">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SEVER Coffee Room">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Меню — SEVER Coffee Room">
+  <meta property="og:description" content="Кофе, не кофе, завтраки и выпечка. Короткое меню без случайных позиций.">
+  <meta property="og:image" content="images/menu/cappuccino-1000.webp">
+  <meta property="og:image:width" content="1000">
+  <meta property="og:image:height" content="1250">
+  <meta property="og:image:alt" content="Капучино в керамической чашке">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Manrope:wght@400;500;600&amp;display=swap">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="SEVER Coffee Room — на главную">
+        <span class="brand__name">SEVER</span><span class="brand__note">Coffee Room</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Открыть меню">
+        <span class="nav-toggle__label" aria-hidden="true">Меню</span><span class="nav-toggle__icon" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li><a class="site-nav__link" href="menu.html" aria-current="page">Меню</a></li>
+          <li><a class="site-nav__link" href="about.html">О нас</a></li>
+        </ul>
+        <a class="btn btn--ghost site-nav__cta" href="about.html#visit">Как нас найти</a>
+        <p class="site-nav__extra">Казань, ул. Баумана, 23<br>Ежедневно 08:00–22:00</p>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="menu-title">
+      <div class="container page-hero__grid">
+        <div>
+          <p class="label label--rule" data-intro style="--i:0">Меню</p>
+          <h1 id="menu-title" class="display display-xl page-hero__title" data-intro style="--i:1">Чашка&nbsp;— <em>и&nbsp;что&#8209;нибудь к&nbsp;ней</em></h1>
+        </div>
+        <div class="page-hero__aside" data-intro style="--i:2">
+          <p class="lead">Короткое меню без случайных позиций: эспрессо-напитки, авторские чаи, завтраки и выпечка.</p>
+          <p class="menu-hint">
+            <span class="menu-hint__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Нажмите на позицию, чтобы увидеть фото, описание и состав.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="menu-nav" aria-label="Разделы меню">
+      <div class="container">
+        <ul class="menu-nav__list">
+          <li><a class="menu-nav__link" href="#coffee"><span>01</span>Кофе</a></li>
+          <li><a class="menu-nav__link" href="#not-coffee"><span>02</span>Не кофе</a></li>
+          <li><a class="menu-nav__link" href="#food"><span>03</span>Еда и выпечка</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section section--cream menu-section" id="coffee" aria-labelledby="coffee-title">
+      <div class="container menu-cat">
+        <header class="menu-cat__head" data-reveal>
+          <p class="label"><span class="label__num">01</span> Раздел</p>
+          <h2 id="coffee-title" class="display display-l">Кофе</h2>
+          <p class="menu-cat__lead">Классические эспрессо-напитки. Молоко взбиваем отдельно для каждой чашки.</p>
+          <p class="menu-cat__count">6 позиций</p>
+        </header>
+        <ul class="menu-list" role="list" data-accordion>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-espresso" aria-expanded="false" aria-controls="p-espresso">
+                <span class="item__name">Эспрессо</span>
+                <span class="item__price">150&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-espresso" role="region" aria-labelledby="t-espresso">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/espresso-600.webp" data-srcset="images/menu/espresso-600.webp 600w, images/menu/espresso-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Маленькая керамическая чашка в полосе солнечного света на деревянном столе" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Короткий и плотный: карамельная сладость, мягкая кислотность и долгое шоколадное послевкусие.</p>
+                    <dl class="item__facts">
+                      <div><dt>Объём</dt><dd>30 мл</dd></div>
+                      <div><dt>Подача</dt><dd>В прогретой чашке, со стаканом воды</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Эспрессо из зерна светлой обжарки, фильтрованная вода.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-americano" aria-expanded="false" aria-controls="p-americano">
+                <span class="item__name">Американо</span>
+                <span class="item__price">190&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-americano" role="region" aria-labelledby="t-americano">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/americano-600.webp" data-srcset="images/menu/americano-600.webp 600w, images/menu/americano-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Керамическая кружка с кофе на мраморной столешнице" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Эспрессо, раскрытый горячей водой: чистый, лёгкий, с ореховыми нотами — для долгого разговора.</p>
+                    <dl class="item__facts">
+                      <div><dt>Объём</dt><dd>200 мл</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Эспрессо, горячая фильтрованная вода.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-cappuccino" aria-expanded="false" aria-controls="p-cappuccino">
+                <span class="item__name">Капучино</span>
+                <span class="item__price">230&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-cappuccino" role="region" aria-labelledby="t-cappuccino">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/cappuccino-600.webp" data-srcset="images/menu/cappuccino-600.webp 600w, images/menu/cappuccino-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Капучино с латте-артом в серой керамической чашке на пробковой подставке" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Классика в правильной пропорции: эспрессо и шелковистая микропена — тёплая и плотная, как бархат.</p>
+                    <dl class="item__facts">
+                      <div><dt>Объём</dt><dd>200 мл</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Эспрессо, молоко 3,2&nbsp;%.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-flatwhite" aria-expanded="false" aria-controls="p-flatwhite">
+                <span class="item__name">Флэт уайт</span>
+                <span class="item__price">260&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-flatwhite" role="region" aria-labelledby="t-flatwhite">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/flatwhite-600.webp" data-srcset="images/menu/flatwhite-600.webp 600w, images/menu/flatwhite-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Белая чашка флэт уайта на блюдце на деревянном столе" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Больше кофе, меньше молока. Двойной ристретто под тонким слоем пены — насыщенно и ясно.</p>
+                    <dl class="item__facts">
+                      <div><dt>Объём</dt><dd>200 мл</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Двойной ристретто, молоко 3,2&nbsp;%.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-latte" aria-expanded="false" aria-controls="p-latte">
+                <span class="item__name">Латте</span>
+                <span class="item__price">280&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-latte" role="region" aria-labelledby="t-latte">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/latte-600.webp" data-srcset="images/menu/latte-600.webp 600w, images/menu/latte-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Латте с рисунком на пене в прозрачном стакане на деревянном столе" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Мягкий и молочный, с едва заметной кофейной горчинкой. Особенно хорош с выпечкой.</p>
+                    <dl class="item__facts">
+                      <div><dt>Объём</dt><dd>300 мл</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Эспрессо, молоко 3,2&nbsp;%.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-raf" aria-expanded="false" aria-controls="p-raf">
+                <span class="item__name">Раф</span>
+                <span class="item__price">320&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-raf" role="region" aria-labelledby="t-raf">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/raf-600.webp" data-srcset="images/menu/raf-600.webp 600w, images/menu/raf-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Сливочный кофейный напиток в рифлёном стакане на деревянном подносе" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Эспрессо, взбитый вместе со сливками и ванильным сахаром, — нежная, почти десертная текстура.</p>
+                    <dl class="item__facts">
+                      <div><dt>Объём</dt><dd>300 мл</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Эспрессо, сливки 10&nbsp;%, ванильный сахар.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--cream menu-section" id="not-coffee" aria-labelledby="not-coffee-title">
+      <div class="container menu-cat">
+        <header class="menu-cat__head" data-reveal>
+          <p class="label"><span class="label__num">02</span> Раздел</p>
+          <h2 id="not-coffee-title" class="display display-l">Не&nbsp;кофе</h2>
+          <p class="menu-cat__lead">Для тех, кто сегодня без кофеина — или почти без него. Чаи собираем сами из фруктов, ягод и пряностей.</p>
+          <p class="menu-cat__count">4 позиции</p>
+        </header>
+        <ul class="menu-list" role="list" data-accordion>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-matcha" aria-expanded="false" aria-controls="p-matcha">
+                <span class="item__name">Айс-матча</span>
+                <span class="item__price">320&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-matcha" role="region" aria-labelledby="t-matcha">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/matcha-600.webp" data-srcset="images/menu/matcha-600.webp 600w, images/menu/matcha-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Стакан холодной матчи с молоком и льдом в мягком свете" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Матча, взбитая вручную, на холодном молоке со льдом. Травянистая, сливочная, освежающая.</p>
+                    <dl class="item__facts">
+                      <div><dt>Объём</dt><dd>300 мл</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Матча, молоко 3,2&nbsp;%, лёд.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-tonic" aria-expanded="false" aria-controls="p-tonic">
+                <span class="item__name">Эспрессо-тоник</span>
+                <span class="item__price">330&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-tonic" role="region" aria-labelledby="t-tonic">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/tonic-600.webp" data-srcset="images/menu/tonic-600.webp 600w, images/menu/tonic-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Слоистый эспрессо-тоник в стакане на тёмном камне в солнечном свете" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Горьковатый тоник, много льда и эспрессо сверху. Бодрящий напиток для тёплого дня.</p>
+                    <dl class="item__facts">
+                      <div><dt>Объём</dt><dd>300 мл</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Тоник, лёд, эспрессо.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-seabuckthorn" aria-expanded="false" aria-controls="p-seabuckthorn">
+                <span class="item__name">Облепиха — апельсин — розмарин</span>
+                <span class="item__price">290&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-seabuckthorn" role="region" aria-labelledby="t-seabuckthorn">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/seabuckthorn-600.webp" data-srcset="images/menu/seabuckthorn-600.webp 600w, images/menu/seabuckthorn-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Высокий стакан облепихового чая, рядом ягоды облепихи" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Яркая облепиха, сочный апельсин и смолистая нота розмарина. Согревает и бодрит.</p>
+                    <dl class="item__facts">
+                      <div><dt>Объём</dt><dd>400 мл</dd></div>
+                      <div><dt>Тип</dt><dd>Авторский чай</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Облепиха, апельсин, розмарин, мёд, горячая вода.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-hibiscus" aria-expanded="false" aria-controls="p-hibiscus">
+                <span class="item__name">Вишня — гибискус — корица</span>
+                <span class="item__price">290&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-hibiscus" role="region" aria-labelledby="t-hibiscus">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/hibiscus-600.webp" data-srcset="images/menu/hibiscus-600.webp 600w, images/menu/hibiscus-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Стеклянная кружка рубинового чая с палочками корицы" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Терпкий гибискус, спелая вишня и тёплая корица — глубокий рубиновый вкус.</p>
+                    <dl class="item__facts">
+                      <div><dt>Объём</dt><dd>400 мл</dd></div>
+                      <div><dt>Тип</dt><dd>Авторский чай</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Гибискус, вишня, корица, сахарный сироп, горячая вода.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--cream menu-section" id="food" aria-labelledby="food-title">
+      <div class="container menu-cat">
+        <header class="menu-cat__head" data-reveal>
+          <p class="label"><span class="label__num">03</span> Раздел</p>
+          <h2 id="food-title" class="display display-l">Еда и&nbsp;выпечка</h2>
+          <p class="menu-cat__lead">Завтраки весь день и выпечка к кофе.</p>
+          <p class="menu-cat__count">5 позиций</p>
+        </header>
+        <ul class="menu-list" role="list" data-accordion>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-syrniki" aria-expanded="false" aria-controls="p-syrniki">
+                <span class="item__name">Сырники со сметаной</span>
+                <span class="item__price">350&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-syrniki" role="region" aria-labelledby="t-syrniki">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/syrniki-600.webp" data-srcset="images/menu/syrniki-600.webp 600w, images/menu/syrniki-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Сырники со сметаной и ягодами на керамической тарелке" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Нежные творожные сырники с золотистой корочкой — как дома, только без хлопот.</p>
+                    <dl class="item__facts">
+                      <div><dt>Подача</dt><dd>Тёплыми, со сметаной и ягодами</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Творог, яйцо, мука, сахар, сметана, сезонные ягоды.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-sandwich" aria-expanded="false" aria-controls="p-sandwich">
+                <span class="item__name">Сэндвич с курицей</span>
+                <span class="item__price">390&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-sandwich" role="region" aria-labelledby="t-sandwich">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/sandwich-600.webp" data-srcset="images/menu/sandwich-600.webp 600w, images/menu/sandwich-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Сэндвич с курицей и зеленью на деревянной доске" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Хрустящий хлеб, сочная курица и свежая зелень. Простой и сытный.</p>
+                    <dl class="item__facts">
+                      <div><dt>Подача</dt><dd>Тёплым</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Хлеб на закваске, запечённое куриное филе, салат, соус.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-avotoast" aria-expanded="false" aria-controls="p-avotoast">
+                <span class="item__name">Тост с авокадо и яйцом</span>
+                <span class="item__price">420&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-avotoast" role="region" aria-labelledby="t-avotoast">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/avotoast-600.webp" data-srcset="images/menu/avotoast-600.webp 600w, images/menu/avotoast-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Тост с авокадо и яйцом пашот на белой тарелке" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Поджаренный хлеб, мягкое авокадо и яйцо пашот — завтрак, который хорош в любое время.</p>
+                    <dl class="item__facts">
+                      <div><dt>Подача</dt><dd>Сразу после приготовления</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Хлеб на закваске, авокадо, яйцо, лимон, оливковое масло, соль, перец.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-croissant" aria-expanded="false" aria-controls="p-croissant">
+                <span class="item__name">Круассан классический</span>
+                <span class="item__price">190&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-croissant" role="region" aria-labelledby="t-croissant">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/croissant-600.webp" data-srcset="images/menu/croissant-600.webp 600w, images/menu/croissant-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Классический круассан на пробковой подставке" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Слоёный и хрустящий снаружи, воздушный внутри. Сливочное масло и терпение.</p>
+                    <dl class="item__facts">
+                      <div><dt>Подача</dt><dd>Слегка подогретым</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Мука, сливочное масло, молоко, дрожжи, сахар, соль.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <h3 class="item__heading">
+              <button class="item__trigger" type="button" id="t-almond" aria-expanded="false" aria-controls="p-almond">
+                <span class="item__name">Круассан с миндальным кремом</span>
+                <span class="item__price">270&nbsp;₽</span>
+                <span class="item__chevron"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5.5 9.25 12 15.75l6.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </h3>
+            <div class="item__panel" id="p-almond" role="region" aria-labelledby="t-almond">
+              <div class="item__inner">
+                <div class="item__body">
+                  <figure class="item__media">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/menu/almond-600.webp" data-srcset="images/menu/almond-600.webp 600w, images/menu/almond-1000.webp 1000w" sizes="(max-width: 767px) 92vw, (max-width: 1279px) 34vw, 400px" width="600" height="750" alt="Круассан с миндальными лепестками на крафтовой бумаге" decoding="async">
+                  </figure>
+                  <div class="item__info">
+                    <p class="item__desc">Круассан с нежным миндальным кремом и хрустящими лепестками миндаля.</p>
+                    <dl class="item__facts">
+                      <div><dt>Подача</dt><dd>Слегка подогретым</dd></div>
+                    </dl>
+                    <div class="item__composition">
+                      <h4>Состав</h4>
+                      <p>Круассан, миндальный крем, лепестки миндаля, сахарная пудра.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--cream menu-notes-section" aria-label="Примечания к меню">
+      <div class="container">
+        <div class="menu-notes">
+          <div data-reveal><h3>Цены</h3><p>Все цены указаны в рублях.</p></div>
+          <div data-reveal style="--d:1"><h3>Описания и состав</h3><p>Демонстрационные: SEVER Coffee Room — концептуальный проект. О&nbsp;возможных аллергенах лучше спросить у&nbsp;бариста.</p></div>
+          <div data-reveal style="--d:2"><h3>С собой</h3><p>Любой напиток можно взять с&nbsp;собой.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-tagline">Кофе, свет и немного тишины в центре города.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Навигация</h2>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="about.html#visit">Как нас найти</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col--visit">
+          <h2>Визит</h2>
+          <address>Казань, ул. Баумана, 23</address>
+          <p>Ежедневно 08:00–22:00</p>
+          <p>Телефон (демо): 8 (000) 000-00-00</p>
+        </div>
+        <div class="footer-col">
+          <h2>Соцсети (демо)</h2>
+          <ul>
+            <li>Instagram @sever.coffee</li>
+            <li>Telegram @sever.coffee</li>
+            <li>VK sever.coffee</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 SEVER Coffee Room · Концептуальный проект</p>
+      <p>Фотографии: <a href="about.html#credits">Unsplash — авторы и лицензии</a></p>
+    </div>
+    <p class="footer-wordmark" aria-hidden="true">SEVER</p>
+  </footer>
+</body>
+</html>

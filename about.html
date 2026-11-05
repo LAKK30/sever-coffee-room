@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>О нас — SEVER Coffee Room</title>
+  <meta name="description" content="История и философия SEVER Coffee Room — концепции тихой кофейни в центре Казани. Принципы, ритуал эспрессо и как нас найти.">
+  <meta name="theme-color" content="#171917">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SEVER Coffee Room">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="О нас — SEVER Coffee Room">
+  <meta property="og:description" content="Тишина — тоже ингредиент. История и принципы SEVER Coffee Room.">
+  <meta property="og:image" content="images/arch-1600.webp">
+  <meta property="og:image:alt" content="Бетонная архитектура с аркой в мягком свете">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Manrope:wght@400;500;600&amp;display=swap">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="SEVER Coffee Room — на главную">
+        <span class="brand__name">SEVER</span><span class="brand__note">Coffee Room</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Открыть меню">
+        <span class="nav-toggle__label" aria-hidden="true">Меню</span><span class="nav-toggle__icon" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li><a class="site-nav__link" href="menu.html">Меню</a></li>
+          <li><a class="site-nav__link" href="about.html" aria-current="page">О нас</a></li>
+        </ul>
+        <a class="btn btn--ghost site-nav__cta" href="#visit">Как нас найти</a>
+        <p class="site-nav__extra">Казань, ул. Баумана, 23<br>Ежедневно 08:00–22:00</p>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero: the architectural photo hangs over into the cream story below, tying the two together. -->
+    <section class="page-hero about-hero" aria-labelledby="about-title">
+      <div class="container page-hero__grid about-hero__grid">
+        <div class="about-hero__copy">
+          <p class="label label--rule" data-intro style="--i:0">О нас</p>
+          <h1 id="about-title" class="display display-xl page-hero__title" data-intro style="--i:1">Тишина&nbsp;— тоже <em>ингредиент</em></h1>
+          <p class="lead about-hero__lead" data-intro style="--i:2">SEVER — это кофейня, задуманная как пауза между делами: место, куда заходят за чашкой кофе и остаются чуть дольше, чем планировали.</p>
+        </div>
+        <figure class="about-hero__media">
+          <div class="reveal-media" data-reveal>
+            <img src="images/arch-900.webp" srcset="images/arch-900.webp 900w, images/arch-1600.webp 1600w"
+                 sizes="(max-width: 1023px) 92vw, 38vw" width="900" height="600" decoding="async"
+                 alt="Чёрно-белая фотография бетонных стен и арки в рассеянном свете">
+          </div>
+          <figcaption>Бетон, рассеянный свет и пауза — образ, с которого начинался SEVER.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- One cream surface for the whole story: where the name came from, and the rules that grew out of it. -->
+    <section class="section section--cream about-story" aria-labelledby="story-title">
+      <div class="container">
+        <div class="story">
+          <p class="label" data-reveal><span class="label__num">01</span> История</p>
+          <h2 id="story-title" class="display display-m story__lead" data-reveal>Название пришло раньше, чем меню: <em class="accent">север</em> — это ясный свет, сдержанность и&nbsp;тепло внутри.</h2>
+          <div class="story__cols">
+            <p data-reveal>Мы представляли себе северную комнату с большим окном: снаружи прохладно и тихо, внутри — дерево, камень, тёплая лампа и чашка, которую не нужно допивать на бегу. Из этого образа выросло всё остальное — палитра, материалы, звук, даже ритм обслуживания.</p>
+            <p data-reveal style="--d:1">SEVER Coffee Room — концепция городской кофейни в историческом центре Казани. Это история о том, какой может быть кофейня, если строить её вокруг внимания к деталям, а не вокруг скорости: короткое меню, спокойный зал и бариста, у которого есть время на разговор.</p>
+          </div>
+        </div>
+
+        <div class="tenets">
+          <div class="tenets__head" data-reveal>
+            <p class="label"><span class="label__num">02</span> Принципы</p>
+            <h2 id="values-title" class="display display-l">Четыре правила, из которых сложился <em class="accent">SEVER</em></h2>
+            <p class="tenets__bridge">Из образа северной комнаты — четыре простых правила для каждого дня.</p>
+          </div>
+          <ol class="tenets__list" role="list" aria-labelledby="values-title">
+            <li class="tenet" data-reveal>
+              <span class="tenet__num" aria-hidden="true">01</span>
+              <h3 class="tenet__title">Свет</h3>
+              <p>Днём — только естественный. Вечером — тёплые лампы на уровне стола, без яркого верхнего света.</p>
+            </li>
+            <li class="tenet" data-reveal style="--d:1">
+              <span class="tenet__num" aria-hidden="true">02</span>
+              <h3 class="tenet__title">Материал</h3>
+              <p>Тёмный дуб, натуральный камень, лён и ручная керамика. Вещи, которые с годами становятся только лучше.</p>
+            </li>
+            <li class="tenet" data-reveal>
+              <span class="tenet__num" aria-hidden="true">03</span>
+              <h3 class="tenet__title">Время</h3>
+              <p>Никто не торопит освободить стол. Можно прийти с книгой, ноутбуком или просто с мыслями.</p>
+            </li>
+            <li class="tenet" data-reveal style="--d:1">
+              <span class="tenet__num" aria-hidden="true">04</span>
+              <h3 class="tenet__title">Ремесло</h3>
+              <p>Меньше позиций — больше внимания к каждой. Рецепты выверены, а молоко взбивается под каждую чашку.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ritual: same cream surface; the photo overlaps a stone panel that carries the text. -->
+    <section class="section section--cream ritual" aria-labelledby="ritual-title">
+      <div class="container">
+        <div class="ritual__stage">
+          <figure class="ritual__media reveal-media" data-reveal>
+            <img src="images/tray-800.webp" srcset="images/tray-800.webp 800w, images/tray-1400.webp 1400w"
+                 sizes="(max-width: 1023px) 92vw, 40vw" width="800" height="1200" loading="lazy" decoding="async"
+                 alt="Руки ставят на каменную стойку поднос с эспрессо и стаканом воды">
+          </figure>
+          <div class="ritual__panel">
+            <div class="ritual__text">
+              <p class="label" data-reveal><span class="label__num">03</span> Ритуал</p>
+              <h2 id="ritual-title" class="display display-m" data-reveal>Как мы подаём <em>эспрессо</em></h2>
+              <p class="ritual__intro" data-reveal>Самый короткий напиток в меню — лучший способ показать, как мы относимся к кофе. Поэтому у эспрессо в SEVER есть свой небольшой ритуал.</p>
+              <ol class="ritual__steps" role="list">
+                <li data-reveal>Зерно мелем непосредственно перед приготовлением.</li>
+                <li data-reveal>Чашку заранее прогреваем, чтобы кофе не остывал.</li>
+                <li data-reveal>Подаём со стаканом воды — освежить вкус перед первым глотком.</li>
+                <li data-reveal>Если интересно, бариста расскажет, откуда это зерно.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit: dark close of the page, flowing straight into the footer; the project note sits quietly at its foot. -->
+    <section class="section section--dark-2 visit" id="visit" aria-labelledby="visit-title">
+      <div class="container">
+        <div class="visit__grid">
+          <div class="visit__info">
+            <p class="label" data-reveal><span class="label__num">04</span> Как нас найти</p>
+            <h2 id="visit-title" class="display display-l visit__title" data-reveal>Адрес <em class="accent">кофейни</em></h2>
+            <dl class="invite__details" data-reveal>
+              <div class="detail">
+                <dt>Адрес</dt>
+                <dd><address class="detail__main">ул.&nbsp;Баумана,&nbsp;23</address><span class="detail__sub">Казань, исторический центр</span></dd>
+              </div>
+              <div class="detail">
+                <dt>Часы</dt>
+                <dd><span class="detail__main">08:00&nbsp;—&nbsp;22:00</span><span class="detail__sub">Ежедневно, без выходных</span></dd>
+              </div>
+              <div class="detail">
+                <dt>Телефон</dt>
+                <dd><span class="detail__main detail__main--s">8&nbsp;(000)&nbsp;000-00-00</span><span class="detail__sub">Демонстрационный номер</span></dd>
+              </div>
+            </dl>
+            <div class="invite__actions visit__actions" data-reveal>
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB.%20%D0%91%D0%B0%D1%83%D0%BC%D0%B0%D0%BD%D0%B0%2C%2023" target="_blank" rel="noopener noreferrer">Открыть карту <span class="btn__arrow" aria-hidden="true">↗</span><span class="visually-hidden"> (откроется в новой вкладке)</span></a>
+              <a class="link" href="menu.html">Посмотреть меню</a>
+            </div>
+            <ul class="socials" aria-label="Демонстрационные аккаунты в социальных сетях" data-reveal>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.6" cy="6.6" r="1" fill="currentColor"/></svg>Instagram @sever.coffee</li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.5 4.6 18.4 19c-.2 1.1-.8 1.4-1.6.9l-4.6-3.4-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L6.8 13.2l-4.6-1.4c-1-.3-1-1 .2-1.4L20.3 3.6c.8-.3 1.5.2 1.2 1z"/></svg>Telegram @sever.coffee</li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4" width="19" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15" text-anchor="middle" fill="currentColor" font-size="8" font-weight="700" font-family="Arial, sans-serif">VK</text></svg>VK sever.coffee</li>
+            </ul>
+          </div>
+          <figure class="visit__media reveal-media" data-reveal>
+            <img src="images/room-1000.webp" srcset="images/room-1000.webp 1000w, images/room-2000.webp 2000w"
+                 sizes="(max-width: 1023px) 92vw, 46vw" width="1000" height="667" loading="lazy" decoding="async"
+                 alt="Круглые столики и плетёные стулья у большого окна кофейни">
+            <figcaption>Лучшие места — у окна.</figcaption>
+          </figure>
+        </div>
+
+        <aside class="project-note" id="credits" aria-label="О проекте и источниках фотографий">
+          <p class="project-note__text"><span class="project-note__tag">Концептуальный проект</span> SEVER Coffee Room — дизайн-концепция для портфолио. Бренд, тексты и сценарии вымышлены; адрес, телефон и аккаунты в соцсетях — демонстрационные.</p>
+          <details class="credits-details">
+            <summary class="credits-details__summary">Источники фотографий <span class="credits-details__count">20</span></summary>
+            <div class="credits-details__body">
+              <div>
+                <h3 class="credits-details__title">Страницы сайта</h3>
+                <ul class="credits">
+                  <li><span>Интерьер, главная</span><a href="https://unsplash.com/photos/yr9l_xQPDL0" target="_blank" rel="noopener noreferrer">99.films</a></li>
+                  <li><span>Свет на стене</span><a href="https://unsplash.com/photos/F5G2l-71bU8" target="_blank" rel="noopener noreferrer">Egor Myznik</a></li>
+                  <li><span>Бетон и арка</span><a href="https://unsplash.com/photos/DrQ_An-GwOw" target="_blank" rel="noopener noreferrer">Bjørn-Magnus Kristiansen</a></li>
+                  <li><span>Подача эспрессо</span><a href="https://unsplash.com/photos/qBEaQG0Yho8" target="_blank" rel="noopener noreferrer">Nathan Dumlao</a></li>
+                  <li><span>Столики у окна</span><a href="https://unsplash.com/photos/TzBFk5nzAKY" target="_blank" rel="noopener noreferrer">Mustafa Sheikhmouss</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="credits-details__title">Меню</h3>
+                <ul class="credits credits--cols">
+                  <li><span>Эспрессо</span><a href="https://unsplash.com/photos/YgGcvu9tyKA" target="_blank" rel="noopener noreferrer">Howard Bouchevereau</a></li>
+                  <li><span>Американо</span><a href="https://unsplash.com/photos/qX7tgapreJU" target="_blank" rel="noopener noreferrer">Andreas Haslinger</a></li>
+                  <li><span>Капучино</span><a href="https://unsplash.com/photos/VC_p0QuurTU" target="_blank" rel="noopener noreferrer">Cristian Cristian</a></li>
+                  <li><span>Флэт уайт</span><a href="https://unsplash.com/photos/lLeJtNN-6TA" target="_blank" rel="noopener noreferrer">dapiki moto</a></li>
+                  <li><span>Латте</span><a href="https://unsplash.com/photos/vfiA7rRtjWo" target="_blank" rel="noopener noreferrer">Billy Kwok</a></li>
+                  <li><span>Раф</span><a href="https://unsplash.com/photos/djWJLL91_KQ" target="_blank" rel="noopener noreferrer">Büşra İnce</a></li>
+                  <li><span>Айс-матча</span><a href="https://unsplash.com/photos/Oog-4Ox0rv8" target="_blank" rel="noopener noreferrer">Cody Chan</a></li>
+                  <li><span>Эспрессо-тоник</span><a href="https://unsplash.com/photos/Uhdp6G8zzWw" target="_blank" rel="noopener noreferrer">Kenny</a></li>
+                  <li><span>Облепиховый чай</span><a href="https://unsplash.com/photos/Z9rn0LeEy88" target="_blank" rel="noopener noreferrer">Katya Azimova</a></li>
+                  <li><span>Вишня и гибискус</span><a href="https://unsplash.com/photos/oVACw86wCB0" target="_blank" rel="noopener noreferrer">Asli Dokuzeylul</a></li>
+                  <li><span>Сырники</span><a href="https://unsplash.com/photos/WXNfNUFSeSU" target="_blank" rel="noopener noreferrer">Masha Koko</a></li>
+                  <li><span>Сэндвич</span><a href="https://unsplash.com/photos/CDAOrX5Jq9I" target="_blank" rel="noopener noreferrer">Leanna Myers</a></li>
+                  <li><span>Тост с авокадо</span><a href="https://unsplash.com/photos/P7oGUDHswIA" target="_blank" rel="noopener noreferrer">Andrew Spencer</a></li>
+                  <li><span>Круассан</span><a href="https://unsplash.com/photos/AaRR995SYcE" target="_blank" rel="noopener noreferrer">Vicky Nguyen</a></li>
+                  <li><span>Миндальный круассан</span><a href="https://unsplash.com/photos/ZV1acMlN9T0" target="_blank" rel="noopener noreferrer">Salvador Rios</a></li>
+                </ul>
+              </div>
+              <p class="credits-details__license">Все фотографии — с <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash по лицензии Unsplash</a>. Ссылки открываются в новой вкладке.</p>
+            </div>
+          </details>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-tagline">Кофе, свет и немного тишины в центре города.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Навигация</h2>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="#visit">Как нас найти</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col--visit">
+          <h2>Визит</h2>
+          <address>Казань, ул. Баумана, 23</address>
+          <p>Ежедневно 08:00–22:00</p>
+          <p>Телефон (демо): 8 (000) 000-00-00</p>
+        </div>
+        <div class="footer-col">
+          <h2>Соцсети (демо)</h2>
+          <ul>
+            <li>Instagram @sever.coffee</li>
+            <li>Telegram @sever.coffee</li>
+            <li>VK sever.coffee</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 SEVER Coffee Room · Концептуальный проект</p>
+      <p>Фотографии: <a href="#credits">Unsplash — авторы и лицензии</a></p>
+    </div>
+    <p class="footer-wordmark" aria-hidden="true">SEVER</p>
+  </footer>
+</body>
+</html>
